@@ -1,0 +1,51 @@
+.imgSec {
+   flex: 1;
+   height: 100vh;
+   position: relative;
+   overflow: hidden;
+}
+
+.imgSec img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.imgSec-overlay {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: linear-gradient(orange, rgba(255, 166, 0, 0.329));
+}
+
+.imgSec-textBox {
+   padding: 1rem;
+   color: rgba(255, 255, 255, 0.856);
+}
+
+.imgSec-textBox h3 {
+   font-size: 1vw;
+   letter-spacing: 2px;
+}
+
+.imgSec-textBox h1 {
+   font-size: 3vw;
+}
+
+
+
+@media screen and (max-width: 700px) {
+   .imgSec {
+      flex: none;
+      width: 100vw;
+      height: 80px;
+   }
+   .imgSec-textBox h3 {
+      font-size: 0.8rem;
+   }
+   .imgSec-textBox h1 {
+      font-size: 1.5rem;
+   }
+}

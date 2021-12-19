@@ -1,0 +1,38 @@
+.formBox {
+   width: 100%;
+   margin-top: 3rem;
+   flex: 1;
+   padding: 1rem 3rem;
+   overflow-y: scroll;
+}
+
+.formBox::-webkit-scrollbar {
+   display: none;
+}
+
+.formBox .textFields {
+   width: 100%;
+}
+
+.formBox-btnBox {
+   margin-top: 2rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.formBox-btnBox .btns{
+   margin-left: 10px;
+}
+
+.formBox-btnBox .btns:first-child{
+   margin-right: 10px;
+}
+
+
+
+@media screen and (max-width: 700px) {
+   .formBox {
+      padding: 1rem 1rem;
+   }
+}
